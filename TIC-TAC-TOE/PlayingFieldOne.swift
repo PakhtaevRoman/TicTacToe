@@ -123,7 +123,7 @@ struct PlayerView: View {
                 .frame(height: 53)
             
             Text(name)
-                .font(.system(size: 16, weight: .semibold))
+                .font(.system(size: 17, weight: .semibold))
                 .foregroundColor(Color("TitleBlack"))
         }
         .frame(width: 103, height: 103)
@@ -152,7 +152,7 @@ struct CellView: View {
         }
     }
 }
-
+// bottom
 struct PlayingFieldOne_Previews: PreviewProvider {
     static var previews: some View {
         PlayingFieldOne()
