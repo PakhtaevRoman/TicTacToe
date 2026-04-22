@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA2A15E42F98960200714833 /* PlayingFieldTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A15E32F98960200714833 /* PlayingFieldTwo.swift */; };
+		FA2A15E62F989A2700714833 /* HowToPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A15E52F989A2700714833 /* HowToPlay.swift */; };
 		FA46CA612F3B21620008BF18 /* TIC_TAC_TOEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46CA602F3B21620008BF18 /* TIC_TAC_TOEApp.swift */; };
 		FA46CA632F3B21620008BF18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46CA622F3B21620008BF18 /* ContentView.swift */; };
 		FA46CA652F3B21660008BF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA46CA642F3B21660008BF18 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA2A15E32F98960200714833 /* PlayingFieldTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFieldTwo.swift; sourceTree = "<group>"; };
+		FA2A15E52F989A2700714833 /* HowToPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlay.swift; sourceTree = "<group>"; };
 		FA46CA5D2F3B21620008BF18 /* TIC-TAC-TOE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TIC-TAC-TOE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA46CA602F3B21620008BF18 /* TIC_TAC_TOEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TIC_TAC_TOEApp.swift; sourceTree = "<group>"; };
 		FA46CA622F3B21620008BF18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				FA8C9EAC2F4536A90043EEDA /* SelectGameView.swift */,
 				FA8C91202F7A619300C6F6F7 /* SettingGameView.swift */,
 				FA933BA22F7FBCBC009A31FB /* PlayingFieldOne.swift */,
+				FA2A15E32F98960200714833 /* PlayingFieldTwo.swift */,
+				FA2A15E52F989A2700714833 /* HowToPlay.swift */,
 				FA46CA642F3B21660008BF18 /* Assets.xcassets */,
 				FA46CA662F3B21660008BF18 /* Preview Content */,
 			);
@@ -148,9 +154,11 @@
 			files = (
 				FA8C9EAD2F4536A90043EEDA /* SelectGameView.swift in Sources */,
 				FA46CA632F3B21620008BF18 /* ContentView.swift in Sources */,
+				FA2A15E42F98960200714833 /* PlayingFieldTwo.swift in Sources */,
 				FA46CA612F3B21620008BF18 /* TIC_TAC_TOEApp.swift in Sources */,
 				FA933BA32F7FBCBC009A31FB /* PlayingFieldOne.swift in Sources */,
 				FA8C91212F7A619300C6F6F7 /* SettingGameView.swift in Sources */,
+				FA2A15E62F989A2700714833 /* HowToPlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

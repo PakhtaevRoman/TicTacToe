@@ -4,6 +4,9 @@
 //
 //  Created by macbook on 10.02.2026.
 //
+// Refactoring (рефакторинг)
+
+
 
 import SwiftUI
 
@@ -11,7 +14,7 @@ import SwiftUI
 struct TIC_TAC_TOEApp: App {
     var body: some Scene {
         WindowGroup {
-            PlayingFieldOne()
+            HowToPlay()
         }
     }
 }
