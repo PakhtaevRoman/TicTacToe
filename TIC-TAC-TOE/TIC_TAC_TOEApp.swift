@@ -14,7 +14,7 @@ import SwiftUI
 struct TIC_TAC_TOEApp: App {
     var body: some Scene {
         WindowGroup {
-            HowToPlay()
+            PlayerOneWin()
         }
     }
 }

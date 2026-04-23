@@ -15,6 +15,7 @@
 		FA46CA682F3B21660008BF18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA46CA672F3B21660008BF18 /* Preview Assets.xcassets */; };
 		FA8C91212F7A619300C6F6F7 /* SettingGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C91202F7A619300C6F6F7 /* SettingGameView.swift */; };
 		FA8C9EAD2F4536A90043EEDA /* SelectGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C9EAC2F4536A90043EEDA /* SelectGameView.swift */; };
+		FA92C1442F99E97A001D6D11 /* PlayerOneWin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92C1432F99E97A001D6D11 /* PlayerOneWin.swift */; };
 		FA933BA32F7FBCBC009A31FB /* PlayingFieldOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA933BA22F7FBCBC009A31FB /* PlayingFieldOne.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		FA46CA672F3B21660008BF18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA8C91202F7A619300C6F6F7 /* SettingGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGameView.swift; sourceTree = "<group>"; };
 		FA8C9EAC2F4536A90043EEDA /* SelectGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameView.swift; sourceTree = "<group>"; };
+		FA92C1432F99E97A001D6D11 /* PlayerOneWin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerOneWin.swift; sourceTree = "<group>"; };
 		FA933BA22F7FBCBC009A31FB /* PlayingFieldOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFieldOne.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 				FA933BA22F7FBCBC009A31FB /* PlayingFieldOne.swift */,
 				FA2A15E32F98960200714833 /* PlayingFieldTwo.swift */,
 				FA2A15E52F989A2700714833 /* HowToPlay.swift */,
+				FA92C1432F99E97A001D6D11 /* PlayerOneWin.swift */,
 				FA46CA642F3B21660008BF18 /* Assets.xcassets */,
 				FA46CA662F3B21660008BF18 /* Preview Content */,
 			);
@@ -154,6 +157,7 @@
 			files = (
 				FA8C9EAD2F4536A90043EEDA /* SelectGameView.swift in Sources */,
 				FA46CA632F3B21620008BF18 /* ContentView.swift in Sources */,
+				FA92C1442F99E97A001D6D11 /* PlayerOneWin.swift in Sources */,
 				FA2A15E42F98960200714833 /* PlayingFieldTwo.swift in Sources */,
 				FA46CA612F3B21620008BF18 /* TIC_TAC_TOEApp.swift in Sources */,
 				FA933BA32F7FBCBC009A31FB /* PlayingFieldOne.swift in Sources */,
