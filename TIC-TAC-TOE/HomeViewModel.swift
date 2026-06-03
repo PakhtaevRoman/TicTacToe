@@ -12,8 +12,13 @@ final class HomeViewModel: HomeViewModelProtocol {
     // MARK: - State
     @Published var viewItem: HomeViewItem
     
+    private let onNavigate: (AppRoute) -> Void
+    
     // MARK: - Init
-    init() {
+    init(onNavigate: @escaping (AppRoute) -> Void) {
+        self.onNavigate = onNavigate
+                
+        
         self.viewItem = HomeViewItem(
             helpIconName: "Vector",
             settingsIconName: "Setting-Icon",
@@ -40,6 +45,7 @@ final class HomeViewModel: HomeViewModelProtocol {
     }
     
     func didTapPlay() {
-        print("Play tapped")
+        onNavigate(.selectGame)
     }
 }
+

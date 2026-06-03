@@ -12,9 +12,13 @@ import SwiftUI
 
 @main
 struct TIC_TAC_TOEApp: App {
+    
+    @StateObject private var router = AppRouter()
+    
     var body: some Scene {
         WindowGroup {
-            HomeScreen(viewModel: HomeViewModel())
+            RootView()
+                .environmentObject(router)
         }
     }
 }

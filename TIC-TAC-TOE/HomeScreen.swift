@@ -140,6 +140,8 @@ private extension HomeScreen {
 // MARK: - Preview
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen(viewModel: HomeViewModel())
+        HomeScreen(
+            viewModel: HomeViewModel(onNavigate: { _ in })
+        )
     }
 }
