@@ -85,18 +85,10 @@
 		FA46CA5F2F3B21620008BF18 /* TIC-TAC-TOE */ = {
 			isa = PBXGroup;
 			children = (
-				5B2F82102FD058E300D08C7B /* RootView.swift */,
-				5B2F820C2FD0543800D08C7B /* SelectGameViewModel.swift */,
-				5B2F820A2FD053FD00D08C7B /* SelectGameViewModelProtocol.swift */,
-				5B2F82082FD053CE00D08C7B /* SelectGameViewItem.swift */,
-				5B2F82062FD051D400D08C7B /* AppRouter.swift */,
-				5B2F82042FD051AA00D08C7B /* AppRoute.swift */,
-				5B2F82022FD04D6400D08C7B /* HomeViewModel.swift */,
-				5B2F82002FD04D4500D08C7B /* HomeViewModelProtocol.swift */,
+				FA8127682FD062FF0015B7A3 /* SelectGameScreen */,
+				FA8127672FD062C90015B7A3 /* HomeScreen */,
+				FA8127662FD0629C0015B7A3 /* Navigation */,
 				FA46CA602F3B21620008BF18 /* TIC_TAC_TOEApp.swift */,
-				FA46CA622F3B21620008BF18 /* HomeScreen.swift */,
-				5B2F81FE2FD04D2400D08C7B /* HomeViewItem.swift */,
-				FA8C9EAC2F4536A90043EEDA /* SelectGameScreen.swift */,
 				FA8C91202F7A619300C6F6F7 /* SettingGameView.swift */,
 				FA933BA22F7FBCBC009A31FB /* PlayingFieldOne.swift */,
 				FA2A15E32F98960200714833 /* PlayingFieldTwo.swift */,
@@ -116,6 +108,38 @@
 				FA46CA672F3B21660008BF18 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA8127662FD0629C0015B7A3 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				5B2F82102FD058E300D08C7B /* RootView.swift */,
+				5B2F82062FD051D400D08C7B /* AppRouter.swift */,
+				5B2F82042FD051AA00D08C7B /* AppRoute.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		FA8127672FD062C90015B7A3 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5B2F82002FD04D4500D08C7B /* HomeViewModelProtocol.swift */,
+				5B2F82022FD04D6400D08C7B /* HomeViewModel.swift */,
+				FA46CA622F3B21620008BF18 /* HomeScreen.swift */,
+				5B2F81FE2FD04D2400D08C7B /* HomeViewItem.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		FA8127682FD062FF0015B7A3 /* SelectGameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5B2F820C2FD0543800D08C7B /* SelectGameViewModel.swift */,
+				5B2F820A2FD053FD00D08C7B /* SelectGameViewModelProtocol.swift */,
+				5B2F82082FD053CE00D08C7B /* SelectGameViewItem.swift */,
+				FA8C9EAC2F4536A90043EEDA /* SelectGameScreen.swift */,
+			);
+			path = SelectGameScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
