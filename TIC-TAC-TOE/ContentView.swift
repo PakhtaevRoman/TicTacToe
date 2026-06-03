@@ -4,7 +4,8 @@
 //
 //  Created by macbook on 10.02.2026.
 //
-
+//
+//
 import SwiftUI
 
 struct ContentView: View {
