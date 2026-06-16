@@ -45,7 +45,7 @@ final class HomeViewModel: HomeViewModelProtocol {
     }
     
     func didTapPlay() {
-        onNavigate(.selectGame)
+        onNavigate(.playerWin)
     }
 }
 

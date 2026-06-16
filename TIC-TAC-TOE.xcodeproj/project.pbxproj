@@ -16,6 +16,19 @@
 		5B2F820B2FD0541100D08C7B /* SelectGameViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F820A2FD053FD00D08C7B /* SelectGameViewModelProtocol.swift */; };
 		5B2F820D2FD0546600D08C7B /* SelectGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F820C2FD0543800D08C7B /* SelectGameViewModel.swift */; };
 		5B2F82112FD058EA00D08C7B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F82102FD058E300D08C7B /* RootView.swift */; };
+		FA10B37B2FDBD9D2002CEDEE /* SettingGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10B37A2FDBD9D2002CEDEE /* SettingGameViewModel.swift */; };
+		FA10B37D2FDBD9F9002CEDEE /* SettingGameViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10B37C2FDBD9F9002CEDEE /* SettingGameViewModelProtocol.swift */; };
+		FA10B37F2FDBDA17002CEDEE /* SettingGameViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10B37E2FDBDA17002CEDEE /* SettingGameViewItem.swift */; };
+		FA10B3812FDBDA3B002CEDEE /* SettingGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10B3802FDBDA3B002CEDEE /* SettingGameScreen.swift */; };
+		FA10B3832FDBE021002CEDEE /* SkinCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10B3822FDBE021002CEDEE /* SkinCardView.swift */; };
+		FA10B3862FDC007D002CEDEE /* YouLoseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10B3852FDC007D002CEDEE /* YouLoseViewModel.swift */; };
+		FA10B3882FDC009C002CEDEE /* YouLoseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10B3872FDC009C002CEDEE /* YouLoseViewModelProtocol.swift */; };
+		FA10B38A2FDC00EC002CEDEE /* YouLoseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10B3892FDC00EC002CEDEE /* YouLoseScreen.swift */; };
+		FA10B38C2FDC0107002CEDEE /* YouLoseViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10B38B2FDC0107002CEDEE /* YouLoseViewItem.swift */; };
+		FA2974862FDD2803009ADE25 /* DrawViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2974852FDD2803009ADE25 /* DrawViewItem.swift */; };
+		FA2974882FDD2834009ADE25 /* DrawViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2974872FDD2834009ADE25 /* DrawViewModelProtocol.swift */; };
+		FA29748A2FDD287F009ADE25 /* DrawViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2974892FDD287F009ADE25 /* DrawViewModel.swift */; };
+		FA29748C2FDD2899009ADE25 /* DrawScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA29748B2FDD2899009ADE25 /* DrawScreen.swift */; };
 		FA2A15E42F98960200714833 /* PlayingFieldTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A15E32F98960200714833 /* PlayingFieldTwo.swift */; };
 		FA2A15E62F989A2700714833 /* HowToPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A15E52F989A2700714833 /* HowToPlay.swift */; };
 		FA3F25492FBD997300BDFE93 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F25482FBD997300BDFE93 /* Draw.swift */; };
@@ -28,6 +41,14 @@
 		FA8C9EAD2F4536A90043EEDA /* SelectGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C9EAC2F4536A90043EEDA /* SelectGameScreen.swift */; };
 		FA92C1442F99E97A001D6D11 /* PlayerOneWin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92C1432F99E97A001D6D11 /* PlayerOneWin.swift */; };
 		FA933BA32F7FBCBC009A31FB /* PlayingFieldOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA933BA22F7FBCBC009A31FB /* PlayingFieldOne.swift */; };
+		FA93509C2FDFD512009F4F74 /* PlayerWinViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93509B2FDFD512009F4F74 /* PlayerWinViewModelProtocol.swift */; };
+		FA93509E2FDFD528009F4F74 /* PlayerWinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93509D2FDFD528009F4F74 /* PlayerWinViewModel.swift */; };
+		FA9350A02FDFD547009F4F74 /* PlayerWinViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93509F2FDFD547009F4F74 /* PlayerWinViewItem.swift */; };
+		FA9350A22FDFD558009F4F74 /* PlayerWinScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9350A12FDFD558009F4F74 /* PlayerWinScreen.swift */; };
+		FA9623C12FE16B1900E74312 /* HowToPlayViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9623C02FE16B1900E74312 /* HowToPlayViewModelProtocol.swift */; };
+		FA9623C32FE16B2A00E74312 /* HowToPlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9623C22FE16B2A00E74312 /* HowToPlayViewModel.swift */; };
+		FA9623C52FE16B4000E74312 /* HowToPlayViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9623C42FE16B4000E74312 /* HowToPlayViewItem.swift */; };
+		FA9623C72FE16B5000E74312 /* HowToPlayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9623C62FE16B5000E74312 /* HowToPlayScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +61,19 @@
 		5B2F820A2FD053FD00D08C7B /* SelectGameViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameViewModelProtocol.swift; sourceTree = "<group>"; };
 		5B2F820C2FD0543800D08C7B /* SelectGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameViewModel.swift; sourceTree = "<group>"; };
 		5B2F82102FD058E300D08C7B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		FA10B37A2FDBD9D2002CEDEE /* SettingGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGameViewModel.swift; sourceTree = "<group>"; };
+		FA10B37C2FDBD9F9002CEDEE /* SettingGameViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGameViewModelProtocol.swift; sourceTree = "<group>"; };
+		FA10B37E2FDBDA17002CEDEE /* SettingGameViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGameViewItem.swift; sourceTree = "<group>"; };
+		FA10B3802FDBDA3B002CEDEE /* SettingGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGameScreen.swift; sourceTree = "<group>"; };
+		FA10B3822FDBE021002CEDEE /* SkinCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinCardView.swift; sourceTree = "<group>"; };
+		FA10B3852FDC007D002CEDEE /* YouLoseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouLoseViewModel.swift; sourceTree = "<group>"; };
+		FA10B3872FDC009C002CEDEE /* YouLoseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouLoseViewModelProtocol.swift; sourceTree = "<group>"; };
+		FA10B3892FDC00EC002CEDEE /* YouLoseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouLoseScreen.swift; sourceTree = "<group>"; };
+		FA10B38B2FDC0107002CEDEE /* YouLoseViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouLoseViewItem.swift; sourceTree = "<group>"; };
+		FA2974852FDD2803009ADE25 /* DrawViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewItem.swift; sourceTree = "<group>"; };
+		FA2974872FDD2834009ADE25 /* DrawViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewModelProtocol.swift; sourceTree = "<group>"; };
+		FA2974892FDD287F009ADE25 /* DrawViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewModel.swift; sourceTree = "<group>"; };
+		FA29748B2FDD2899009ADE25 /* DrawScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawScreen.swift; sourceTree = "<group>"; };
 		FA2A15E32F98960200714833 /* PlayingFieldTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFieldTwo.swift; sourceTree = "<group>"; };
 		FA2A15E52F989A2700714833 /* HowToPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlay.swift; sourceTree = "<group>"; };
 		FA3F25482FBD997300BDFE93 /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
@@ -53,6 +87,14 @@
 		FA8C9EAC2F4536A90043EEDA /* SelectGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameScreen.swift; sourceTree = "<group>"; };
 		FA92C1432F99E97A001D6D11 /* PlayerOneWin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerOneWin.swift; sourceTree = "<group>"; };
 		FA933BA22F7FBCBC009A31FB /* PlayingFieldOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFieldOne.swift; sourceTree = "<group>"; };
+		FA93509B2FDFD512009F4F74 /* PlayerWinViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWinViewModelProtocol.swift; sourceTree = "<group>"; };
+		FA93509D2FDFD528009F4F74 /* PlayerWinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWinViewModel.swift; sourceTree = "<group>"; };
+		FA93509F2FDFD547009F4F74 /* PlayerWinViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWinViewItem.swift; sourceTree = "<group>"; };
+		FA9350A12FDFD558009F4F74 /* PlayerWinScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWinScreen.swift; sourceTree = "<group>"; };
+		FA9623C02FE16B1900E74312 /* HowToPlayViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewModelProtocol.swift; sourceTree = "<group>"; };
+		FA9623C22FE16B2A00E74312 /* HowToPlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewModel.swift; sourceTree = "<group>"; };
+		FA9623C42FE16B4000E74312 /* HowToPlayViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewItem.swift; sourceTree = "<group>"; };
+		FA9623C62FE16B5000E74312 /* HowToPlayScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +108,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA10B3792FDBD932002CEDEE /* SettingGameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FA8C91202F7A619300C6F6F7 /* SettingGameView.swift */,
+				FA10B37A2FDBD9D2002CEDEE /* SettingGameViewModel.swift */,
+				FA10B37C2FDBD9F9002CEDEE /* SettingGameViewModelProtocol.swift */,
+				FA10B37E2FDBDA17002CEDEE /* SettingGameViewItem.swift */,
+				FA10B3802FDBDA3B002CEDEE /* SettingGameScreen.swift */,
+				FA10B3822FDBE021002CEDEE /* SkinCardView.swift */,
+			);
+			path = SettingGameScreen;
+			sourceTree = "<group>";
+		};
+		FA10B3842FDBFF3F002CEDEE /* YouLoseScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FA3F254A2FBDA27700BDFE93 /* YouLose.swift */,
+				FA10B3852FDC007D002CEDEE /* YouLoseViewModel.swift */,
+				FA10B3872FDC009C002CEDEE /* YouLoseViewModelProtocol.swift */,
+				FA10B3892FDC00EC002CEDEE /* YouLoseScreen.swift */,
+				FA10B38B2FDC0107002CEDEE /* YouLoseViewItem.swift */,
+			);
+			path = YouLoseScreen;
+			sourceTree = "<group>";
+		};
+		FA2974842FDD271F009ADE25 /* DrawScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FA3F25482FBD997300BDFE93 /* Draw.swift */,
+				FA2974872FDD2834009ADE25 /* DrawViewModelProtocol.swift */,
+				FA2974892FDD287F009ADE25 /* DrawViewModel.swift */,
+				FA2974852FDD2803009ADE25 /* DrawViewItem.swift */,
+				FA29748B2FDD2899009ADE25 /* DrawScreen.swift */,
+			);
+			path = DrawScreen;
+			sourceTree = "<group>";
+		};
 		FA46CA542F3B21620008BF18 = {
 			isa = PBXGroup;
 			children = (
@@ -85,17 +164,17 @@
 		FA46CA5F2F3B21620008BF18 /* TIC-TAC-TOE */ = {
 			isa = PBXGroup;
 			children = (
+				FA9623BF2FE16AC000E74312 /* HowToPlay */,
+				FA93509A2FDFD489009F4F74 /* PlayerOneWin */,
+				FA2974842FDD271F009ADE25 /* DrawScreen */,
+				FA10B3842FDBFF3F002CEDEE /* YouLoseScreen */,
+				FA10B3792FDBD932002CEDEE /* SettingGameScreen */,
 				FA8127682FD062FF0015B7A3 /* SelectGameScreen */,
 				FA8127672FD062C90015B7A3 /* HomeScreen */,
 				FA8127662FD0629C0015B7A3 /* Navigation */,
 				FA46CA602F3B21620008BF18 /* TIC_TAC_TOEApp.swift */,
-				FA8C91202F7A619300C6F6F7 /* SettingGameView.swift */,
 				FA933BA22F7FBCBC009A31FB /* PlayingFieldOne.swift */,
 				FA2A15E32F98960200714833 /* PlayingFieldTwo.swift */,
-				FA2A15E52F989A2700714833 /* HowToPlay.swift */,
-				FA92C1432F99E97A001D6D11 /* PlayerOneWin.swift */,
-				FA3F25482FBD997300BDFE93 /* Draw.swift */,
-				FA3F254A2FBDA27700BDFE93 /* YouLose.swift */,
 				FA46CA642F3B21660008BF18 /* Assets.xcassets */,
 				FA46CA662F3B21660008BF18 /* Preview Content */,
 			);
@@ -125,8 +204,8 @@
 			children = (
 				5B2F82002FD04D4500D08C7B /* HomeViewModelProtocol.swift */,
 				5B2F82022FD04D6400D08C7B /* HomeViewModel.swift */,
-				FA46CA622F3B21620008BF18 /* HomeScreen.swift */,
 				5B2F81FE2FD04D2400D08C7B /* HomeViewItem.swift */,
+				FA46CA622F3B21620008BF18 /* HomeScreen.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -140,6 +219,30 @@
 				FA8C9EAC2F4536A90043EEDA /* SelectGameScreen.swift */,
 			);
 			path = SelectGameScreen;
+			sourceTree = "<group>";
+		};
+		FA93509A2FDFD489009F4F74 /* PlayerOneWin */ = {
+			isa = PBXGroup;
+			children = (
+				FA92C1432F99E97A001D6D11 /* PlayerOneWin.swift */,
+				FA93509B2FDFD512009F4F74 /* PlayerWinViewModelProtocol.swift */,
+				FA93509D2FDFD528009F4F74 /* PlayerWinViewModel.swift */,
+				FA93509F2FDFD547009F4F74 /* PlayerWinViewItem.swift */,
+				FA9350A12FDFD558009F4F74 /* PlayerWinScreen.swift */,
+			);
+			path = PlayerOneWin;
+			sourceTree = "<group>";
+		};
+		FA9623BF2FE16AC000E74312 /* HowToPlay */ = {
+			isa = PBXGroup;
+			children = (
+				FA2A15E52F989A2700714833 /* HowToPlay.swift */,
+				FA9623C02FE16B1900E74312 /* HowToPlayViewModelProtocol.swift */,
+				FA9623C22FE16B2A00E74312 /* HowToPlayViewModel.swift */,
+				FA9623C42FE16B4000E74312 /* HowToPlayViewItem.swift */,
+				FA9623C62FE16B5000E74312 /* HowToPlayScreen.swift */,
+			);
+			path = HowToPlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,25 +315,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA29748A2FDD287F009ADE25 /* DrawViewModel.swift in Sources */,
 				FA8C9EAD2F4536A90043EEDA /* SelectGameScreen.swift in Sources */,
+				FA10B37B2FDBD9D2002CEDEE /* SettingGameViewModel.swift in Sources */,
+				FA10B37F2FDBDA17002CEDEE /* SettingGameViewItem.swift in Sources */,
+				FA9350A22FDFD558009F4F74 /* PlayerWinScreen.swift in Sources */,
+				FA9350A02FDFD547009F4F74 /* PlayerWinViewItem.swift in Sources */,
 				FA46CA632F3B21620008BF18 /* HomeScreen.swift in Sources */,
+				FA9623C52FE16B4000E74312 /* HowToPlayViewItem.swift in Sources */,
+				FA10B38A2FDC00EC002CEDEE /* YouLoseScreen.swift in Sources */,
 				5B2F820B2FD0541100D08C7B /* SelectGameViewModelProtocol.swift in Sources */,
 				FA92C1442F99E97A001D6D11 /* PlayerOneWin.swift in Sources */,
+				FA9623C32FE16B2A00E74312 /* HowToPlayViewModel.swift in Sources */,
+				FA93509C2FDFD512009F4F74 /* PlayerWinViewModelProtocol.swift in Sources */,
 				FA3F25492FBD997300BDFE93 /* Draw.swift in Sources */,
 				FA2A15E42F98960200714833 /* PlayingFieldTwo.swift in Sources */,
 				5B2F82112FD058EA00D08C7B /* RootView.swift in Sources */,
+				FA10B3812FDBDA3B002CEDEE /* SettingGameScreen.swift in Sources */,
+				FA10B37D2FDBD9F9002CEDEE /* SettingGameViewModelProtocol.swift in Sources */,
+				FA2974862FDD2803009ADE25 /* DrawViewItem.swift in Sources */,
 				5B2F82052FD051BB00D08C7B /* AppRoute.swift in Sources */,
 				5B2F82072FD051E500D08C7B /* AppRouter.swift in Sources */,
+				FA10B38C2FDC0107002CEDEE /* YouLoseViewItem.swift in Sources */,
 				5B2F82092FD053E000D08C7B /* SelectGameViewItem.swift in Sources */,
+				FA10B3862FDC007D002CEDEE /* YouLoseViewModel.swift in Sources */,
 				FA46CA612F3B21620008BF18 /* TIC_TAC_TOEApp.swift in Sources */,
+				FA10B3832FDBE021002CEDEE /* SkinCardView.swift in Sources */,
+				FA2974882FDD2834009ADE25 /* DrawViewModelProtocol.swift in Sources */,
+				FA10B3882FDC009C002CEDEE /* YouLoseViewModelProtocol.swift in Sources */,
 				FA933BA32F7FBCBC009A31FB /* PlayingFieldOne.swift in Sources */,
+				FA29748C2FDD2899009ADE25 /* DrawScreen.swift in Sources */,
 				FA8C91212F7A619300C6F6F7 /* SettingGameView.swift in Sources */,
 				5B2F82032FD04D6600D08C7B /* HomeViewModel.swift in Sources */,
 				FA3F254B2FBDA27700BDFE93 /* YouLose.swift in Sources */,
+				FA93509E2FDFD528009F4F74 /* PlayerWinViewModel.swift in Sources */,
 				5B2F82012FD04D4D00D08C7B /* HomeViewModelProtocol.swift in Sources */,
 				5B2F81FF2FD04D3100D08C7B /* HomeViewItem.swift in Sources */,
+				FA9623C12FE16B1900E74312 /* HowToPlayViewModelProtocol.swift in Sources */,
 				5B2F820D2FD0546600D08C7B /* SelectGameViewModel.swift in Sources */,
 				FA2A15E62F989A2700714833 /* HowToPlay.swift in Sources */,
+				FA9623C72FE16B5000E74312 /* HowToPlayScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

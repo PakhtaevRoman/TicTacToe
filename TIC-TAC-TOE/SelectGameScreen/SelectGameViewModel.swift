@@ -9,7 +9,7 @@ import Foundation
 
 final class SelectGameViewModel: SelectGameViewModelProtocol {
     
-    let viewItem: SelectGameViewItem
+    @Published var viewItem: SelectGameViewItem
     
     private let onNavigate: (AppRoute) -> Void
     
