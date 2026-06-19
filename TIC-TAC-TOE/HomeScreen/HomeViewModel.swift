@@ -37,7 +37,7 @@ final class HomeViewModel: HomeViewModelProtocol {
     
     // MARK: - Actions
     func didTapHelp() {
-        print("Help tapped")
+        onNavigate(.howToPlay)
     }
     
     func didTapSettings() {
@@ -45,7 +45,7 @@ final class HomeViewModel: HomeViewModelProtocol {
     }
     
     func didTapPlay() {
-        onNavigate(.playerWin)
+        onNavigate(.playingFieldTwo)
     }
 }
 

@@ -23,4 +23,6 @@ enum AppRoute {
     case draw
     case playerWin
     case howToPlay
+    case playingFieldOne
+    case playingFieldTwo
 }

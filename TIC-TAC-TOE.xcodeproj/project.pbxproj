@@ -49,6 +49,14 @@
 		FA9623C32FE16B2A00E74312 /* HowToPlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9623C22FE16B2A00E74312 /* HowToPlayViewModel.swift */; };
 		FA9623C52FE16B4000E74312 /* HowToPlayViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9623C42FE16B4000E74312 /* HowToPlayViewItem.swift */; };
 		FA9623C72FE16B5000E74312 /* HowToPlayScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9623C62FE16B5000E74312 /* HowToPlayScreen.swift */; };
+		FAE6A2212FE3D3F4004AFABB /* PlayingFieldOneViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6A2202FE3D3F4004AFABB /* PlayingFieldOneViewModelProtocol.swift */; };
+		FAE6A2232FE3D409004AFABB /* PlayingFieldOneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6A2222FE3D409004AFABB /* PlayingFieldOneViewModel.swift */; };
+		FAE6A2252FE3D44E004AFABB /* PlayingFieldOneViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6A2242FE3D44E004AFABB /* PlayingFieldOneViewItem.swift */; };
+		FAE6A2272FE3D468004AFABB /* PlayingFieldOneScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6A2262FE3D468004AFABB /* PlayingFieldOneScreen.swift */; };
+		FAE6A22A2FE3E918004AFABB /* PlayingFieldTwoViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6A2292FE3E918004AFABB /* PlayingFieldTwoViewModelProtocol.swift */; };
+		FAE6A22C2FE3E929004AFABB /* PlayingFieldTwoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6A22B2FE3E929004AFABB /* PlayingFieldTwoViewModel.swift */; };
+		FAE6A22E2FE3E93A004AFABB /* PlayingFieldTwoViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6A22D2FE3E93A004AFABB /* PlayingFieldTwoViewItem.swift */; };
+		FAE6A2302FE3E945004AFABB /* PlayingFieldTwoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6A22F2FE3E945004AFABB /* PlayingFieldTwoScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +103,14 @@
 		FA9623C22FE16B2A00E74312 /* HowToPlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewModel.swift; sourceTree = "<group>"; };
 		FA9623C42FE16B4000E74312 /* HowToPlayViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewItem.swift; sourceTree = "<group>"; };
 		FA9623C62FE16B5000E74312 /* HowToPlayScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayScreen.swift; sourceTree = "<group>"; };
+		FAE6A2202FE3D3F4004AFABB /* PlayingFieldOneViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFieldOneViewModelProtocol.swift; sourceTree = "<group>"; };
+		FAE6A2222FE3D409004AFABB /* PlayingFieldOneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFieldOneViewModel.swift; sourceTree = "<group>"; };
+		FAE6A2242FE3D44E004AFABB /* PlayingFieldOneViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFieldOneViewItem.swift; sourceTree = "<group>"; };
+		FAE6A2262FE3D468004AFABB /* PlayingFieldOneScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFieldOneScreen.swift; sourceTree = "<group>"; };
+		FAE6A2292FE3E918004AFABB /* PlayingFieldTwoViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFieldTwoViewModelProtocol.swift; sourceTree = "<group>"; };
+		FAE6A22B2FE3E929004AFABB /* PlayingFieldTwoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFieldTwoViewModel.swift; sourceTree = "<group>"; };
+		FAE6A22D2FE3E93A004AFABB /* PlayingFieldTwoViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFieldTwoViewItem.swift; sourceTree = "<group>"; };
+		FAE6A22F2FE3E945004AFABB /* PlayingFieldTwoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingFieldTwoScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +180,8 @@
 		FA46CA5F2F3B21620008BF18 /* TIC-TAC-TOE */ = {
 			isa = PBXGroup;
 			children = (
+				FAE6A2282FE3E8DB004AFABB /* PlayingFieldTwo */,
+				FAE6A21F2FE3D34D004AFABB /* PlayingFieldOne */,
 				FA9623BF2FE16AC000E74312 /* HowToPlay */,
 				FA93509A2FDFD489009F4F74 /* PlayerOneWin */,
 				FA2974842FDD271F009ADE25 /* DrawScreen */,
@@ -173,8 +191,6 @@
 				FA8127672FD062C90015B7A3 /* HomeScreen */,
 				FA8127662FD0629C0015B7A3 /* Navigation */,
 				FA46CA602F3B21620008BF18 /* TIC_TAC_TOEApp.swift */,
-				FA933BA22F7FBCBC009A31FB /* PlayingFieldOne.swift */,
-				FA2A15E32F98960200714833 /* PlayingFieldTwo.swift */,
 				FA46CA642F3B21660008BF18 /* Assets.xcassets */,
 				FA46CA662F3B21660008BF18 /* Preview Content */,
 			);
@@ -243,6 +259,30 @@
 				FA9623C62FE16B5000E74312 /* HowToPlayScreen.swift */,
 			);
 			path = HowToPlay;
+			sourceTree = "<group>";
+		};
+		FAE6A21F2FE3D34D004AFABB /* PlayingFieldOne */ = {
+			isa = PBXGroup;
+			children = (
+				FA933BA22F7FBCBC009A31FB /* PlayingFieldOne.swift */,
+				FAE6A2202FE3D3F4004AFABB /* PlayingFieldOneViewModelProtocol.swift */,
+				FAE6A2222FE3D409004AFABB /* PlayingFieldOneViewModel.swift */,
+				FAE6A2242FE3D44E004AFABB /* PlayingFieldOneViewItem.swift */,
+				FAE6A2262FE3D468004AFABB /* PlayingFieldOneScreen.swift */,
+			);
+			path = PlayingFieldOne;
+			sourceTree = "<group>";
+		};
+		FAE6A2282FE3E8DB004AFABB /* PlayingFieldTwo */ = {
+			isa = PBXGroup;
+			children = (
+				FA2A15E32F98960200714833 /* PlayingFieldTwo.swift */,
+				FAE6A2292FE3E918004AFABB /* PlayingFieldTwoViewModelProtocol.swift */,
+				FAE6A22B2FE3E929004AFABB /* PlayingFieldTwoViewModel.swift */,
+				FAE6A22D2FE3E93A004AFABB /* PlayingFieldTwoViewItem.swift */,
+				FAE6A22F2FE3E945004AFABB /* PlayingFieldTwoScreen.swift */,
+			);
+			path = PlayingFieldTwo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,14 +358,18 @@
 				FA29748A2FDD287F009ADE25 /* DrawViewModel.swift in Sources */,
 				FA8C9EAD2F4536A90043EEDA /* SelectGameScreen.swift in Sources */,
 				FA10B37B2FDBD9D2002CEDEE /* SettingGameViewModel.swift in Sources */,
+				FAE6A22E2FE3E93A004AFABB /* PlayingFieldTwoViewItem.swift in Sources */,
 				FA10B37F2FDBDA17002CEDEE /* SettingGameViewItem.swift in Sources */,
 				FA9350A22FDFD558009F4F74 /* PlayerWinScreen.swift in Sources */,
+				FAE6A2232FE3D409004AFABB /* PlayingFieldOneViewModel.swift in Sources */,
 				FA9350A02FDFD547009F4F74 /* PlayerWinViewItem.swift in Sources */,
 				FA46CA632F3B21620008BF18 /* HomeScreen.swift in Sources */,
 				FA9623C52FE16B4000E74312 /* HowToPlayViewItem.swift in Sources */,
 				FA10B38A2FDC00EC002CEDEE /* YouLoseScreen.swift in Sources */,
 				5B2F820B2FD0541100D08C7B /* SelectGameViewModelProtocol.swift in Sources */,
+				FAE6A22A2FE3E918004AFABB /* PlayingFieldTwoViewModelProtocol.swift in Sources */,
 				FA92C1442F99E97A001D6D11 /* PlayerOneWin.swift in Sources */,
+				FAE6A2272FE3D468004AFABB /* PlayingFieldOneScreen.swift in Sources */,
 				FA9623C32FE16B2A00E74312 /* HowToPlayViewModel.swift in Sources */,
 				FA93509C2FDFD512009F4F74 /* PlayerWinViewModelProtocol.swift in Sources */,
 				FA3F25492FBD997300BDFE93 /* Draw.swift in Sources */,
@@ -346,14 +390,18 @@
 				FA933BA32F7FBCBC009A31FB /* PlayingFieldOne.swift in Sources */,
 				FA29748C2FDD2899009ADE25 /* DrawScreen.swift in Sources */,
 				FA8C91212F7A619300C6F6F7 /* SettingGameView.swift in Sources */,
+				FAE6A2252FE3D44E004AFABB /* PlayingFieldOneViewItem.swift in Sources */,
 				5B2F82032FD04D6600D08C7B /* HomeViewModel.swift in Sources */,
 				FA3F254B2FBDA27700BDFE93 /* YouLose.swift in Sources */,
+				FAE6A22C2FE3E929004AFABB /* PlayingFieldTwoViewModel.swift in Sources */,
 				FA93509E2FDFD528009F4F74 /* PlayerWinViewModel.swift in Sources */,
+				FAE6A2302FE3E945004AFABB /* PlayingFieldTwoScreen.swift in Sources */,
 				5B2F82012FD04D4D00D08C7B /* HomeViewModelProtocol.swift in Sources */,
 				5B2F81FF2FD04D3100D08C7B /* HomeViewItem.swift in Sources */,
 				FA9623C12FE16B1900E74312 /* HowToPlayViewModelProtocol.swift in Sources */,
 				5B2F820D2FD0546600D08C7B /* SelectGameViewModel.swift in Sources */,
 				FA2A15E62F989A2700714833 /* HowToPlay.swift in Sources */,
+				FAE6A2212FE3D3F4004AFABB /* PlayingFieldOneViewModelProtocol.swift in Sources */,
 				FA9623C72FE16B5000E74312 /* HowToPlayScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

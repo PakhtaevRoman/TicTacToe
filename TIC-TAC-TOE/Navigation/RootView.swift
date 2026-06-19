@@ -241,6 +241,26 @@ private extension RootView {
                     set: { if !$0 { router.pop() } }
                 )
             ) { EmptyView() }
+            
+            NavigationLink(
+                destination: PlayingFieldOneScreen(
+                    viewModel: PlayingFieldOneViewModel(onNavigate: router.push)
+                ),
+                isActive: Binding(
+                    get: { router.currentRoute == .playingFieldOne },
+                    set: { if !$0 { router.pop() } }
+                )
+            ) { EmptyView() }
+            
+            NavigationLink(
+                destination: PlayingFieldTwoScreen(
+                    viewModel: PlayingFieldTwoViewModel(onNavigate: router.push)
+                ),
+                isActive: Binding(
+                    get: { router.currentRoute == .playingFieldTwo },
+                    set: { if !$0 { router.pop() } }
+                )
+            ) { EmptyView() }
         }
     }
 }
