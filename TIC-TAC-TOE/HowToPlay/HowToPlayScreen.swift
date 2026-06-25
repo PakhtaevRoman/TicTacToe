@@ -28,6 +28,7 @@ struct HowToPlayScreen<ViewModel: HowToPlayViewModelProtocol>: View {
                 }
             }
         }
+        .gameNavigationHidden()
     }
 }
 
@@ -82,22 +83,29 @@ private extension HowToPlayScreen {
         _ rule: HowToPlayViewItem.Rule
     ) -> some View {
 
-        HStack(spacing: 20) {
+        HStack(alignment: .top, spacing: 20) {
 
             Text(rule.number)
+                .font(.system(size: 20, weight: .semibold))
+                .foregroundColor(.black)
                 .frame(width: 45, height: 45)
                 .background(
                     Color(viewModel.viewItem.numberBackgroundColorName)
                 )
-                .cornerRadius(22.5)
+                .clipShape(Circle())
 
             Text(rule.text)
-                .padding()
+                .font(.system(size: 16))
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
                 .background(
                     Color(viewModel.viewItem.textBackgroundColorName)
                 )
                 .cornerRadius(30)
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 

@@ -188,17 +188,33 @@ private extension RootView {
                 ),
                 isActive: Binding(
                     get: { router.currentRoute == .selectGame },
-                    set: { if !$0 { router.pop() } }
+                    set: { _ in }
                 )
             ) { EmptyView() }
 
             NavigationLink(
                 destination: SettingGameScreen(
-                    viewModel: SettingGameViewModel(onNavigate: router.push)
+                    viewModel: SettingGameViewModel(
+                        onNavigate: router.push,
+                        returnRoute: .home
+                    )
                 ),
                 isActive: Binding(
-                    get: { router.currentRoute == .settingsGame },
-                    set: { if !$0 { router.pop() } }
+                    get: { router.currentRoute == .settingsFromHome },
+                    set: { _ in }
+                )
+            ) { EmptyView() }
+            
+            NavigationLink(
+                destination: SettingGameScreen(
+                    viewModel: SettingGameViewModel(
+                        onNavigate: router.push,
+                        returnRoute: .selectGame
+                    )
+                ),
+                isActive: Binding(
+                    get: { router.currentRoute == .settingsFromSelectGame },
+                    set: { _ in }
                 )
             ) { EmptyView() }
 
@@ -208,7 +224,7 @@ private extension RootView {
                 ),
                 isActive: Binding(
                     get: { router.currentRoute == .youLose },
-                    set: { if !$0 { router.pop() } }
+                    set: { _ in }
                 )
             ) { EmptyView() }
 
@@ -218,7 +234,7 @@ private extension RootView {
                 ),
                 isActive: Binding(
                     get: { router.currentRoute == .draw },
-                    set: { if !$0 { router.pop() } }
+                    set: { _ in }
                 )
             ) { EmptyView() }
 
@@ -228,7 +244,7 @@ private extension RootView {
                 ),
                 isActive: Binding(
                     get: { router.currentRoute == .playerWin },
-                    set: { if !$0 { router.pop() } }
+                    set: { _ in }
                 )
             ) { EmptyView() }
 
@@ -238,27 +254,19 @@ private extension RootView {
                 ),
                 isActive: Binding(
                     get: { router.currentRoute == .howToPlay },
-                    set: { if !$0 { router.pop() } }
+                    set: { _ in }
                 )
             ) { EmptyView() }
             
             NavigationLink(
-                destination: PlayingFieldOneScreen(
-                    viewModel: PlayingFieldOneViewModel(onNavigate: router.push)
+                destination: PlayingFieldScreen(
+                    viewModel: PlayingFieldViewModel(
+                        onNavigate: router.push
+                    )
                 ),
                 isActive: Binding(
-                    get: { router.currentRoute == .playingFieldOne },
-                    set: { if !$0 { router.pop() } }
-                )
-            ) { EmptyView() }
-            
-            NavigationLink(
-                destination: PlayingFieldTwoScreen(
-                    viewModel: PlayingFieldTwoViewModel(onNavigate: router.push)
-                ),
-                isActive: Binding(
-                    get: { router.currentRoute == .playingFieldTwo },
-                    set: { if !$0 { router.pop() } }
+                    get: { router.currentRoute == .playingField },
+                    set: { _ in }
                 )
             ) { EmptyView() }
         }

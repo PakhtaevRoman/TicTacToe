@@ -33,6 +33,7 @@ struct DrawScreen<ViewModel: DrawViewModelProtocol>: View {
                 secondaryButton
             }
         }
+        .gameNavigationHidden()
     }
 }
 // MARK: - background ✅Разделение кода для удобства навигации в Xcode

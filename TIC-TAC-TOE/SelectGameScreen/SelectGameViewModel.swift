@@ -4,19 +4,19 @@
 //
 //  Created by Evgeniy K on 03.06.2026.
 //
-
 import Foundation
+import Combine
 
 final class SelectGameViewModel: SelectGameViewModelProtocol {
-    
+
     @Published var viewItem: SelectGameViewItem
-    
+
     private let onNavigate: (AppRoute) -> Void
-    
+
     init(onNavigate: @escaping (AppRoute) -> Void) {
-        
+
         self.onNavigate = onNavigate
-        
+
         self.viewItem = SelectGameViewItem(
             title: "Select Game",
             singlePlayerImage: "Single Player",
@@ -27,16 +27,20 @@ final class SelectGameViewModel: SelectGameViewModelProtocol {
             settingsIconName: "Setting-Icon"
         )
     }
-    
+
     func didTapSettings() {
-        print("Settings tapped")
+        onNavigate(.settingsFromSelectGame)
     }
-    
+
     func didTapSinglePlayer() {
-        print("Single Player")
+
+        GameModeStorage.shared.selectedMode = .single
+        onNavigate(.playingField)
     }
-    
+
     func didTapTwoPlayer() {
-        print("Two Player")
+
+        GameModeStorage.shared.selectedMode = .twoPlayer
+        onNavigate(.playingField)
     }
 }

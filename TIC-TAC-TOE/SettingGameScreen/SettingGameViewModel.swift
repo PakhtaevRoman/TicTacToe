@@ -7,22 +7,23 @@
 
 import Foundation
 
-// MARK: - Модель данных (один скин)
 struct Skin: Identifiable {
-    let id = UUID()          // уникальный идентификатор для ForEach
-    let xImage: String       // картинка для X
-    let oImage: String       // картинка для O
+    let id = UUID()
+    let xImage: String
+    let oImage: String
 }
 
 final class SettingGameViewModel: SettingGameViewModelProtocol {
-    
+
     @Published var viewItem: SettingGameViewItem
-    
+
     private let onNavigate: (AppRoute) -> Void
-    
-    init(onNavigate: @escaping (AppRoute) -> Void) {
+    private let returnRoute: AppRoute
+
+    init(onNavigate: @escaping (AppRoute) -> Void, returnRoute: AppRoute) {
         self.onNavigate = onNavigate
-        
+        self.returnRoute = returnRoute
+
         let skins: [Skin] = [
             Skin(xImage: "Xskin1", oImage: "Oskin1"),
             Skin(xImage: "Xskin2", oImage: "Oskin2"),
@@ -31,19 +32,24 @@ final class SettingGameViewModel: SettingGameViewModelProtocol {
             Skin(xImage: "Oskin4", oImage: "Xskin4"),
             Skin(xImage: "Oskin5", oImage: "Xskin5")
         ]
-        
+
+        // 👇 ЗАГРУЗКА ИЗ USERDEFAULTS
+        let savedSkinIndex = SettingsStorage.shared.selectedSkinIndex
+        let savedDuration = SettingsStorage.shared.selectedDuration
+        let savedGameTime = SettingsStorage.shared.isGameTimeEnabled
+
         self.viewItem = SettingGameViewItem(
             skins: skins,
-            selectedSkinIndex: nil,
-            isGameTimeEnabled: false,
-            selectedDuration: .min30
+            selectedSkinIndex: savedSkinIndex,
+            isGameTimeEnabled: savedGameTime,
+            selectedDuration: savedDuration
         )
     }
-    
+
     func didTapBack() {
-        onNavigate(.home)
+        onNavigate(returnRoute)
     }
-    
+
     func didSelectSkin(index: Int) {
         viewItem = SettingGameViewItem(
             skins: viewItem.skins,
@@ -51,17 +57,25 @@ final class SettingGameViewModel: SettingGameViewModelProtocol {
             isGameTimeEnabled: viewItem.isGameTimeEnabled,
             selectedDuration: viewItem.selectedDuration
         )
+
+        // 💾 SAVE
+        SettingsStorage.shared.selectedSkinIndex = index
     }
-    
+
     func didToggleGameTime() {
+        let newValue = !viewItem.isGameTimeEnabled
+
         viewItem = SettingGameViewItem(
             skins: viewItem.skins,
             selectedSkinIndex: viewItem.selectedSkinIndex,
-            isGameTimeEnabled: !viewItem.isGameTimeEnabled,
+            isGameTimeEnabled: newValue,
             selectedDuration: viewItem.selectedDuration
         )
+
+        // 💾 SAVE
+        SettingsStorage.shared.isGameTimeEnabled = newValue
     }
-    
+
     func didSelectDuration(_ option: DurationOption) {
         viewItem = SettingGameViewItem(
             skins: viewItem.skins,
@@ -69,5 +83,8 @@ final class SettingGameViewModel: SettingGameViewModelProtocol {
             isGameTimeEnabled: viewItem.isGameTimeEnabled,
             selectedDuration: option
         )
+
+        // 💾 SAVE
+        SettingsStorage.shared.selectedDuration = option
     }
 }

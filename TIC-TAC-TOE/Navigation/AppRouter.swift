@@ -34,9 +34,10 @@ import Combine
 final class AppRouter: ObservableObject {
 
     @Published var currentRoute: AppRoute? = .home
+    var previousRoute: AppRoute = .home
 
     func push(_ route: AppRoute) {
-        guard currentRoute != route else { return }
+        previousRoute = currentRoute ?? .home
         currentRoute = route
     }
 

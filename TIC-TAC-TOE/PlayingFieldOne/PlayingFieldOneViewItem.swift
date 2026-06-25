@@ -18,26 +18,26 @@
 // turn title - перевернуть заголовок
 // cell - клетка
 
-import Foundation
-
-struct PlayingFieldOneViewItem {
-
-    // Картинка кнопки назад
-    let backButtonImage: String
-    
-// Игрок №1
-    let playerOneImage: String
-    let playerOneName: String
-    
-// Игрок №2
-    let playerTwoImage: String
-    let playerTwoName: String
-    
-// Текст под игроками
-    let turnTitle: String
-    
-// Цвета
-    let backgroundColorName: String
-    let cellBackgroundColorName: String
-    
-}
+//import Foundation
+//
+//struct PlayingFieldOneViewItem {
+//
+//    // Картинка кнопки назад
+//    let backButtonImage: String
+//    
+//// Игрок №1
+//    let playerOneImage: String
+//    let playerOneName: String
+//    
+//// Игрок №2
+//    let playerTwoImage: String
+//    let playerTwoName: String
+//    
+//// Текст под игроками
+//    let turnTitle: String
+//    
+//// Цвета
+//    let backgroundColorName: String
+//    let cellBackgroundColorName: String
+//    
+//}

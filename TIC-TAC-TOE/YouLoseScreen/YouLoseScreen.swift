@@ -31,6 +31,7 @@ struct YouLoseScreen<ViewModel: YouLoseViewModelProtocol>: View {
                 secondaryButton
             }
         }
+        .gameNavigationHidden()
     }
 }
 

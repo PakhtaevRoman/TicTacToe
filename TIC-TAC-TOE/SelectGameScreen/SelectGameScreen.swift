@@ -26,6 +26,7 @@ struct SelectGameScreen<ViewModel: SelectGameViewModelProtocol>: View {
         .safeAreaInset(edge: .top) {
             topContent
         }
+        .gameNavigationHidden()
     }
 }
 

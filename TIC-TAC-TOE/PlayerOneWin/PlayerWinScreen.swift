@@ -31,6 +31,7 @@ struct PlayerWinScreen<ViewModel: PlayerWinViewModelProtocol>: View {
                 secondaryView
             }
         }
+        .gameNavigationHidden()
     }
 }
 

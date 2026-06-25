@@ -12,20 +12,20 @@
 // col - столбец
 
 
-import Foundation
-import Combine
-
-protocol PlayingFieldOneViewModelProtocol: ObservableObject {
-    
-// Данные для интерфейса
-    var viewItem:  PlayingFieldOneViewItem { get }
-    
-// Игровое поле 3x3
-    var board: [[String]] { get }
-    
-// Нажатие назад
-    func didTapBack()
-    
-// Нажатие на клетку
-    func didTapCell(row: Int, col: Int)
-}
+//import Foundation
+//import Combine
+//
+//protocol PlayingFieldOneViewModelProtocol: ObservableObject {
+//    
+//// Данные для интерфейса
+//    var viewItem:  PlayingFieldOneViewItem { get }
+//    
+//// Игровое поле 3x3
+//    var board: [[String]] { get }
+//    
+//// Нажатие назад
+//    func didTapBack()
+//    
+//// Нажатие на клетку
+//    func didTapCell(row: Int, col: Int)
+//}

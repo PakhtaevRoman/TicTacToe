@@ -15,7 +15,7 @@ struct SettingGameScreen<ViewModel: SettingGameViewModelProtocol>: View {
         ZStack {
             Color("BackgroundMain")
                 .ignoresSafeArea()
-            
+
             ScrollView(showsIndicators: false) {
                 VStack {
                     header
@@ -24,6 +24,7 @@ struct SettingGameScreen<ViewModel: SettingGameViewModelProtocol>: View {
                 }
             }
         }
+        .gameNavigationHidden()
     }
 }
 
@@ -49,69 +50,87 @@ private extension SettingGameScreen {
 }
 
 // MARK: - Settings
+
 private extension SettingGameScreen {
-    
+
     var settingsBlock: some View {
         VStack(spacing: 20) {
-            
+
             // Game Time
             HStack {
                 Text("Game Time")
                     .font(.system(size: 20, weight: .semibold))
-                
+
                 Spacer()
-                
-                Image(viewModel.viewItem.isGameTimeEnabled ? "Switch-On" : "Switch-Off")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 47, height: 28)
-                    .onTapGesture {
-                        viewModel.didToggleGameTime()
-                    }
+
+                Toggle(
+                    "",
+                    isOn: Binding(
+                        get: { viewModel.viewItem.isGameTimeEnabled },
+                        set: { _ in
+                            viewModel.didToggleGameTime()
+                        }
+                    )
+                )
+                .labelsHidden()
+                .tint(Color("Blue"))
             }
             .padding(.horizontal, 20)
             .frame(height: 69)
             .background(Color("Light-blue"))
             .cornerRadius(30)
-            
+
             // Duration
-            VStack(spacing: 0) {
-                
-                Text("Duration")
-                        .frame(height: 44)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.leading, 20)
-                        .foregroundColor(.black)
-                        .overlay(
-                            Rectangle()
-                                .fill(Color("Blue"))
-                                .frame(height: 1),
-                            alignment: .bottom
-                        )
-                
-                ForEach(DurationOption.allCases, id: \.self) { option in
-                    durationRow(option)
+            Group {
+                if viewModel.viewItem.isGameTimeEnabled {
+                    VStack(spacing: 0) {
+                        Text("Duration")
+                            .frame(height: 44)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.leading, 20)
+                            .foregroundColor(.black)
+                            .overlay(
+                                Rectangle()
+                                    .fill(Color("Blue"))
+                                    .frame(height: 1),
+                                alignment: .bottom
+                            )
+
+                        ForEach(DurationOption.allCases, id: \.self) { option in
+                            durationRow(option)
+                        }
+                    }
+                    .background(Color("Light-blue"))
+                    .cornerRadius(30)
+                    .transition(.opacity)
                 }
             }
-            .background(Color("Light-blue"))
-            .cornerRadius(30)
         }
+        .animation(
+            .easeInOut(duration: 0.25),
+            value: viewModel.viewItem.isGameTimeEnabled
+        )
         .padding(20)
         .background(Color.white)
         .cornerRadius(30)
-        .shadow(color: Color.black.opacity(0.15), radius: 10, x: 4, y: 4)
+        .shadow(
+            color: Color.black.opacity(0.15),
+            radius: 10,
+            x: 4,
+            y: 4
+        )
         .padding(.horizontal, 21)
         .padding(.top)
     }
-    
+
     func durationRow(_ option: DurationOption) -> some View {
         let isSelected = viewModel.viewItem.selectedDuration == option
-        
+
         return ZStack(alignment: .leading) {
             if isSelected {
                 Color("Purple")
             }
-            
+
             Text(option.rawValue)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading, 20)

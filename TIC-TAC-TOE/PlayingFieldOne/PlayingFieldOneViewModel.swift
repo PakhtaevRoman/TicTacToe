@@ -13,55 +13,55 @@
 // Router -> private let onNavigate: (AppRoute) -> Void - Используется для переходов между экранами.
 // Actions - Действия
 
-import Foundation
-import Combine
-
-final class PlayingFieldOneViewModel: PlayingFieldOneViewModelProtocol {
-
-    // MARK: - State
-
-    @Published var board: [[String]]
-
-    let viewItem: PlayingFieldOneViewItem
-
-    private let onNavigate: (AppRoute) -> Void
-
-    // MARK: - Init
-
-    init(onNavigate: @escaping (AppRoute) -> Void) {
-
-        self.onNavigate = onNavigate
-
-        self.board = Array(
-            repeating: Array(repeating: "", count: 3),
-            count: 3
-        )
-
-        self.viewItem = PlayingFieldOneViewItem(
-            backButtonImage: "Icon",
-            playerOneImage: "Xskin1",
-            playerOneName: "You",
-            playerTwoImage: "Oskin1",
-            playerTwoName: "Player Two",
-            turnTitle: "Your turn",
-            backgroundColorName: "BackgroundMain",
-            cellBackgroundColorName: "ButtonLightBlue"
-        )
-    }
-
-    // MARK: - Actions
-
-    func didTapBack() {
-        onNavigate(.home)
-    }
-
-    func didTapCell(row: Int, col: Int) {
-
-        guard board[row][col].isEmpty else {
-            return
-        }
-
-        board[row][col] = "X"
-    }
-}
-
+//import Foundation
+//import Combine
+//
+//final class PlayingFieldOneViewModel: PlayingFieldOneViewModelProtocol {
+//
+//    // MARK: - State
+//
+//    @Published var board: [[String]]
+//
+//    let viewItem: PlayingFieldOneViewItem
+//
+//    private let onNavigate: (AppRoute) -> Void
+//
+//    // MARK: - Init
+//
+//    init(onNavigate: @escaping (AppRoute) -> Void) {
+//
+//        self.onNavigate = onNavigate
+//
+//        self.board = Array(
+//            repeating: Array(repeating: "", count: 3),
+//            count: 3
+//        )
+//
+//        self.viewItem = PlayingFieldOneViewItem(
+//            backButtonImage: "Icon",
+//            playerOneImage: "Xskin1",
+//            playerOneName: "You",
+//            playerTwoImage: "Oskin1",
+//            playerTwoName: "Player Two",
+//            turnTitle: "Your turn",
+//            backgroundColorName: "BackgroundMain",
+//            cellBackgroundColorName: "ButtonLightBlue"
+//        )
+//    }
+//
+//    // MARK: - Actions
+//
+//    func didTapBack() {
+//        onNavigate(.home)
+//    }
+//
+//    func didTapCell(row: Int, col: Int) {
+//
+//        guard board[row][col].isEmpty else {
+//            return
+//        }
+//
+//        board[row][col] = "X"
+//    }
+//}
+//

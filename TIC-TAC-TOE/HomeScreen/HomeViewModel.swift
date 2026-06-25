@@ -41,11 +41,11 @@ final class HomeViewModel: HomeViewModelProtocol {
     }
     
     func didTapSettings() {
-        print("Settings tapped")
+        onNavigate(.settingsFromHome)
     }
     
     func didTapPlay() {
-        onNavigate(.playingFieldTwo)
+        onNavigate(.selectGame)
     }
 }
 

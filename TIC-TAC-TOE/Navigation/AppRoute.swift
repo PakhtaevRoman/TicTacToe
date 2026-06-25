@@ -19,10 +19,13 @@ enum AppRoute {
     case home
     case selectGame
     case settingsGame
+    
+    case settingsFromHome
+    case settingsFromSelectGame
+    
     case youLose
     case draw
     case playerWin
     case howToPlay
-    case playingFieldOne
-    case playingFieldTwo
+    case playingField
 }
