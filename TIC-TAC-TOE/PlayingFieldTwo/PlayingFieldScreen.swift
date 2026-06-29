@@ -373,7 +373,7 @@ private extension PlayingFieldScreen {
     }
 
     func cellView(
-        value: String,
+        value: CellState,
         action: @escaping () -> Void
     ) -> some View {
 
@@ -386,17 +386,22 @@ private extension PlayingFieldScreen {
                     .frame(width: 74, height: 73)
 
                 // 🔥 ВАЖНО: теперь показываем картинку, а не текст
-                if value == viewModel.skinX {
-                    Image(viewModel.viewItem.playerOneImage)
+                switch value {
+
+                case .x:
+                    Image(viewModel.skinX)
                         .resizable()
                         .scaledToFit()
                         .frame(height: 40)
 
-                } else if value == viewModel.skinO {
-                    Image(viewModel.viewItem.playerTwoImage)
+                case .o:
+                    Image(viewModel.skinO)
                         .resizable()
                         .scaledToFit()
                         .frame(height: 40)
+
+                case .empty:
+                    EmptyView()
                 }
             }
         }

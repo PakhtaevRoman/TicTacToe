@@ -260,9 +260,7 @@ private extension RootView {
             
             NavigationLink(
                 destination: PlayingFieldScreen(
-                    viewModel: PlayingFieldViewModel(
-                        onNavigate: router.push
-                    )
+                    viewModel: PlayingFieldViewModel(router: router)
                 ),
                 isActive: Binding(
                     get: { router.currentRoute == .playingField },

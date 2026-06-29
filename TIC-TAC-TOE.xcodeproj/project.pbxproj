@@ -40,6 +40,8 @@
 		FA46CA632F3B21620008BF18 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46CA622F3B21620008BF18 /* HomeScreen.swift */; };
 		FA46CA652F3B21660008BF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA46CA642F3B21660008BF18 /* Assets.xcassets */; };
 		FA46CA682F3B21660008BF18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA46CA672F3B21660008BF18 /* Preview Assets.xcassets */; };
+		FA4848EB2FF28B5F009BC49C /* CellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4848EA2FF28B5F009BC49C /* CellState.swift */; };
+		FA4848ED2FF2936A009BC49C /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4848EC2FF2936A009BC49C /* GameResult.swift */; };
 		FA877D732FEA1E9800AF800C /* SettingsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA877D722FEA1E9800AF800C /* SettingsStorage.swift */; };
 		FA8C91212F7A619300C6F6F7 /* SettingGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C91202F7A619300C6F6F7 /* SettingGameView.swift */; };
 		FA8C9EAD2F4536A90043EEDA /* SelectGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C9EAC2F4536A90043EEDA /* SelectGameScreen.swift */; };
@@ -93,6 +95,8 @@
 		FA46CA622F3B21620008BF18 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		FA46CA642F3B21660008BF18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA46CA672F3B21660008BF18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA4848EA2FF28B5F009BC49C /* CellState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellState.swift; sourceTree = "<group>"; };
+		FA4848EC2FF2936A009BC49C /* GameResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResult.swift; sourceTree = "<group>"; };
 		FA877D722FEA1E9800AF800C /* SettingsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStorage.swift; sourceTree = "<group>"; };
 		FA8C91202F7A619300C6F6F7 /* SettingGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGameView.swift; sourceTree = "<group>"; };
 		FA8C9EAC2F4536A90043EEDA /* SelectGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGameScreen.swift; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				FA2E297D2FECFD130012E2D1 /* SkinProvider.swift */,
+				FA4848EA2FF28B5F009BC49C /* CellState.swift */,
+				FA4848EC2FF2936A009BC49C /* GameResult.swift */,
 			);
 			path = SkinProvider;
 			sourceTree = "<group>";
@@ -191,7 +197,7 @@
 				FA2E29812FED31320012E2D1 /* SkinProvider */,
 				FAE6A2282FE3E8DB004AFABB /* PlayingFieldTwo */,
 				FA9623BF2FE16AC000E74312 /* HowToPlay */,
-				FA93509A2FDFD489009F4F74 /* PlayerOneWin */,
+				FA93509A2FDFD489009F4F74 /* PlayerWin */,
 				FA2974842FDD271F009ADE25 /* DrawScreen */,
 				FA10B3842FDBFF3F002CEDEE /* YouLoseScreen */,
 				FA10B3792FDBD932002CEDEE /* SettingGameScreen */,
@@ -246,7 +252,7 @@
 			path = SelectGameScreen;
 			sourceTree = "<group>";
 		};
-		FA93509A2FDFD489009F4F74 /* PlayerOneWin */ = {
+		FA93509A2FDFD489009F4F74 /* PlayerWin */ = {
 			isa = PBXGroup;
 			children = (
 				FA92C1432F99E97A001D6D11 /* PlayerOneWin.swift */,
@@ -255,7 +261,7 @@
 				FA93509F2FDFD547009F4F74 /* PlayerWinViewItem.swift */,
 				FA9350A12FDFD558009F4F74 /* PlayerWinScreen.swift */,
 			);
-			path = PlayerOneWin;
+			path = PlayerWin;
 			sourceTree = "<group>";
 		};
 		FA9623BF2FE16AC000E74312 /* HowToPlay */ = {
@@ -381,6 +387,7 @@
 				5B2F82072FD051E500D08C7B /* AppRouter.swift in Sources */,
 				FA10B38C2FDC0107002CEDEE /* YouLoseViewItem.swift in Sources */,
 				5B2F82092FD053E000D08C7B /* SelectGameViewItem.swift in Sources */,
+				FA4848ED2FF2936A009BC49C /* GameResult.swift in Sources */,
 				FA10B3862FDC007D002CEDEE /* YouLoseViewModel.swift in Sources */,
 				FA46CA612F3B21620008BF18 /* TIC_TAC_TOEApp.swift in Sources */,
 				FA10B3832FDBE021002CEDEE /* SkinCardView.swift in Sources */,
@@ -395,6 +402,7 @@
 				FAE6A2302FE3E945004AFABB /* PlayingFieldScreen.swift in Sources */,
 				5B2F82012FD04D4D00D08C7B /* HomeViewModelProtocol.swift in Sources */,
 				5B2F81FF2FD04D3100D08C7B /* HomeViewItem.swift in Sources */,
+				FA4848EB2FF28B5F009BC49C /* CellState.swift in Sources */,
 				FA9623C12FE16B1900E74312 /* HowToPlayViewModelProtocol.swift in Sources */,
 				5B2F820D2FD0546600D08C7B /* SelectGameViewModel.swift in Sources */,
 				FA2A15E62F989A2700714833 /* HowToPlay.swift in Sources */,
